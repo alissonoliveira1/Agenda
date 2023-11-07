@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paidias{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+  justify-content: center;
+}
+.pai-dias2{
+    padding-top: 10px;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+  
+}
+.semn{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    flex-flow: wrap;  
+ justify-content: center;
+}
+
+.dias2{
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    width:9.5rem;
+  
+}
+.dias{
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: flex;
+    background-color: rgb(236, 155, 62);
+    width: 8rem;
+    height: 5rem;
+    border-radius: 8px;
+}
+.dias:hover{
+    filter: brightness(0.9);
+}
