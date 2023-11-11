@@ -2,56 +2,161 @@
     margin: 0;
     padding: 0;
 }
+html{
+    background-color: #ebf2f2;
+}
 
 .center{
+    background-color: #d0f2e7;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    border: 1px solid black;
     align-items: center;
 }
 
 .paidias{
-    width: 90%;
+    background-color: #bcebdf;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 75%;
+    align-items: center;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-flow: wrap;
-  justify-content: center;
+  justify-content:center;
 }
 .pai-dias2{
-    padding-top: 10px;
-    width: 90%;
-    display: flex;
-    gap: 10px;
+    display: none;
+    border: 1px solid black;
+    padding: 20px;
+    width: 75%;
+    align-items: center;
+    gap: 5px;
     flex-flow: wrap;
+  justify-content:center;
   
 }
 .semn{
     display: flex;
     gap: 10px;
-    width: 90%;
+    width:79%;
     flex-flow: wrap;  
- justify-content: center;
+    justify-content:center;
+}
+.paitao{
+    display: flex;
+  padding: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.mes{
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    color: white;
+    width: 10rem;
+    background-color: #cad17a;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.butao button{
+    background-color: aquamarine;
+    width: 7rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 30px;
+}
+.diastras{
+    opacity: 0.5;
 }
 
 .dias2{
     font-weight: bolder;
     text-transform: uppercase;
-    background-color: rgb(255, 255, 255);
+    background-color: #ade0db;
     justify-content: center;
     display: flex;
-    width:9.5rem;
+    padding: 10px 10px;
+    width:6.4rem;
+    align-items: center;
   
+}
+.closer button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+     color: red;
+}
+.closer{
+   
+    display: flex;
+    justify-content: flex-end;
+}
+.container {
+    display: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #bcebdf;
+    width: 50%;
+    height: 50%;
+    top: 30vh;
+    left: 25vw;
+    position: absolute;
+    text-align: center;
+}
+
+.container input {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.container button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    height: 10rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 4px 0;
+}
+
+.texto1{
+    font-size: 16px;
 }
 .dias{
     border: 1px solid black;
     cursor: pointer;
     padding: 10px 10px;
     display: flex;
-    background-color: rgb(236, 155, 62);
-    width: 8rem;
-    height: 5rem;
+
+    flex-direction: column;
+    background-color:#91c494;
+    width: 6.6rem;
+    height: 4rem;
     border-radius: 8px;
 }
 .dias:hover{
     filter: brightness(0.9);
+    transform: scale(1.03);
+}
+.datas{
+    display: flex;
+    gap: 50px;
 }

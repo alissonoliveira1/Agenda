@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <div class="paitao">
+    <div class="butao"><button onclick="d3()" id="voltar"><i class="fa-solid fa-chevron-right fa-rotate-180"></i></button></div> <div class="datas"><div class="mes"><span id="mes">Novembro</span></div><div class="mes"><span>2023</span></div> </div><div class="butao"><button onclick="d1()" id="prox"><i class="fa-solid fa-chevron-right"></i></button></div>
+</div>
+    <div class="center">
+        <div class="semn">
+        <div class="dias2">dom</div>
+        <div class="dias2">seg</div>
+        <div class="dias2">ter</div>
+        <div class="dias2">qua</div>
+        <div class="dias2">qui</div>
+        <div class="dias2">sex</div>
+        <div class="dias2">sab</div>
+    </div>
+    <div id="d2" class="paidias">
+        <div class="dias diastras">29</div>
+        <div class="dias diastras">30</div>
+        <div class="dias diastras">31</div>
+        <div onclick="b5()" id="r1" class="dias">1
+            <span class="texto1" id="resp"></span>
+        </div>
+        <div class="dias">2</div>
+        <div class="dias">3</div>
+        <div class="dias">4</div>
+        <div class="dias">5</div>
+        <div class="dias">6</div>
+        <div class="dias">7</div>
+        <div class="dias">8</div>
+        <div class="dias">9</div>
+        <div class="dias">10</div>
+        <div class="dias">11</div>
+        <div class="dias">12</div>
+        <div class="dias">13</div>
+        <div class="dias">14</div>
+        <div class="dias">15</div>
+        <div class="dias">16</div>
+        <div class="dias">17</div>
+        <div class="dias">18</div>
+        <div class="dias">19</div>
+        <div class="dias">20</div>
+        <div class="dias">21</div>
+        <div class="dias">22</div>
+        <div class="dias">23</div>
+        <div class="dias">24</div>
+        <div class="dias">25</div>
+        <div class="dias">26</div>
+        <div class="dias">27</div>
+        <div class="dias">28</div>
+        <div class="dias">29</div>
+        <div class="dias">30</div>
+        <div class="dias diastras">1</div>
+        <div class="dias diastras">2</div>
+    
+    </div>
+    <div class="pai-dias2" id="d3">
+        <div class="dias diastras">26</div>
+        <div class="dias diastras">27</div>
+        <div class="dias diastras">28</div>
+        <div class="dias diastras">29</div>
+        <div class="dias diastras">30</div>
+        <div class="dias">1</div>
+        <div class="dias">2</div>
+        <div class="dias">3</div>
+        <div class="dias">4</div>
+        <div class="dias">5</div>
+        <div class="dias">6</div>
+        <div class="dias">7</div>
+        <div class="dias">8</div>
+        <div class="dias">9</div>
+        <div class="dias">10</div>
+        <div class="dias">11</div>
+        <div class="dias">12</div>
+        <div class="dias">13</div>
+        <div class="dias">14</div>
+        <div class="dias">15</div>
+        <div class="dias">16</div>
+        <div class="dias">17</div>
+        <div class="dias">18</div>
+        <div class="dias">19</div>
+        <div class="dias">20</div>
+        <div class="dias">21</div>
+        <div class="dias">22</div>
+        <div class="dias">23</div>
+        <div class="dias">24</div>
+        <div class="dias">25</div>
+        <div class="dias">26</div>
+        <div class="dias">27</div>
+        <div class="dias">28</div>
+        <div class="dias">29</div>
+        <div class="dias">30</div>
+        <div class="dias">31</div>
+        <div class="dias diastras">1</div>
+        <div class="dias diastras">2</div>
+        <div class="dias diastras">3</div>
+        <div class="dias diastras">4</div>
+        <div class="dias diastras">5</div>
+        <div class="dias diastras">6</div>
+    </div>
+  </div>
+  <div><input  id="texto" type="text"></div>
+  <div><button onclick="d5()">buscar</button></div>
+  <div><button onclick="d6()">carregar</button></div>
+   
+    <div class="container" id="b7">
+        <div class="closer">
+        <button onclick="closer()"><i class="fa-solid fa-xmark"></i></button></div>
+        <h1>Caderno Funcional</h1>
+        <div>
+            <input type="text" id="itemInput" placeholder="Adicionar item">
+            <button onclick="addItem()">Adicionar</button>
+        </div>
+        <ul id="itemList"></ul>
+    </div>
+     <script src="index.js"></script>
+</body>
+</html>
