@@ -12,8 +12,7 @@ function d3(){
 const inp = document.getElementById('texto')
 
 function d5(){
-  document.getElementById('resp').innerHTML = inp.value
- localStorage.text = inp.value
+ 
 }
 document.getElementById('resp').innerHTML = localStorage.text
 
@@ -42,6 +41,7 @@ document.getElementById("itemList").addEventListener("click", function (event) {
 
 
 function addItem() {
+
   const itemInput = document.getElementById("itemInput");
   const itemList = document.getElementById("itemList");
 
@@ -61,6 +61,7 @@ function addItem() {
   itemList.appendChild(li);
 
   itemInput.value = "";
+ 
 }
 
 function showError(message) {
@@ -89,7 +90,10 @@ function addItem() {
       showError("Por favor, insira um item.");
       return;
   }
-
+  document.getElementById('resp').innerHTML = inp.value
+  localStorage.text = inp.value
+  localStorage.lil = itemInput.value
+  
   const li = document.createElement("li");
   const span = document.createElement("span");
   span.textContent = itemInput.value;

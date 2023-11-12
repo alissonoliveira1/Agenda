@@ -113,7 +113,7 @@
         <div class="dias diastras">6</div>
     </div>
   </div>
-  <div><input  id="texto" type="text"></div>
+  
   <div><button onclick="d5()">buscar</button></div>
   <div><button onclick="d6()">carregar</button></div>
    
@@ -121,8 +121,10 @@
         <div class="closer">
         <button onclick="closer()"><i class="fa-solid fa-xmark"></i></button></div>
         <h1>Caderno Funcional</h1>
-        <div>
+        <div> 
+           <input placeholder="Adicionar Titulo" id="texto" type="text">
             <input type="text" id="itemInput" placeholder="Adicionar item">
+           
             <button onclick="addItem()">Adicionar</button>
         </div>
         <ul id="itemList"></ul>
